@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.heroabout {
+    height: 100vh;
+    background-image: url(pictures/abouthero.jpg);
+    background-size: cover;
+    background-color: #e5f7fd6e;
+    display: flex;
+
+    align-items: center;
+    color: #FFF8DB;
+    z-index: -10;
+    opacity: 1;
+}
+
+
+.herocontentabout {
+    max-width: 700px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 10px;
+
+    /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+.heroabout h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.heroabout p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.heroabout h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* color: #FFC857; */
+    color: #FFF8DB;
+}
+
+.heroabout h3:hover {
+    color: #FFF;
+    text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Keyframe for animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* about us */
+
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FFF8DB;
+}
+
+/* Intro Section */
+.intro h1 {
+    font-size: 3rem;
+    color: #304169;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Three-Column Grid */
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.about-card {
+    background: linear-gradient(135deg, #617fd1, #748fca);
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.about-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.about-card p,
+.about-card ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-card ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.stat-item {
+    background: #304169;
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+    width: 150px;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00e0ff;
+}
+
+.stat-item p {
+    font-size: 1rem;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* For screens between 985px and 1250px */
+@media (max-width: 1250px) {
+    .stat-item {
+        width: 90%;
+
+    }
+
+    .about-card {
+        width: 90%;
+        /* Dynamically increase the width of the cards */
+    }
+}
+
+/* For smaller screens, max width 985px */
+@media (max-width: 985px) {
+    .stat-item {
+        width: 80%;
+
+    }
+
+    .about-card {
+        width: 80%;
+        /* Dynamically increase the width of the cards */
+    }
+}
+
+/* For very small screens (mobile view) */
+@media (max-width: 768px) {
+    .stat-item {
+        width: 88%;
+
+    }
+
+    .about-card {
+        width: 88%;
+        /* Dynamically increase the width of the cards */
+    }
+}

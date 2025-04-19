@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.heroclients {
+    height: 100vh;
+    background-image: url(pictures/ourclientshero.jpg);
+    background-size: cover;
+    background-color: #e5f7fd6e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    z-index: -1000;
+    opacity: 0.9;
+}
+
+.herocontentclients {
+    width: 80%;
+    max-width: 1100px;
+    padding: 20px;
+    color: #333333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.062);
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.heroclients h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+
+.heroclients p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #2f4255;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 300;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .herocontentclients {
+        padding: 20px 10px;
+    }
+
+    .heroclients h1 {
+        font-size: 2.5rem;
+        /* Adjust font size for mobile devices */
+    }
+
+    .heroclients p {
+        font-size: 1.25rem;
+        /* Adjust paragraph size for smaller screens */
+    }
+}
+
+
+.ourclients {
+    background-color: #638889;
+    /* Background color for the section */
+    padding: 40px;
+    text-align: center;
+}
+
+.ourclients h1 {
+    font-size: 3rem;
+    /* Adjusted font size for the header */
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap to next line */
+    justify-content: center;
+    /* Center the items */
+    gap: 20px;
+    /* Space between items */
+    max-width: 1200px;
+    /* Limit the width of the list */
+    margin: 0 auto;
+    /* Center the list */
+}
+
+.client-item {
+    background-color: #f5f5f7;
+    /* Background color for each client item */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside each item */
+    width: 150px;
+    /* Fixed width for uniformity */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Initial shadow for items */
+}
+
+.client-item:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Darker shadow on hover */
+}
+
+.client-item i {
+    font-size: 2rem;
+    /* Icon size */
+    color: #638889;
+    /* Icon color */
+    margin-bottom: 10px;
+    /* Space between icon and name */
+}
+
+.client-item p {
+    font-size: 1.2rem;
+    /* Font size for client name */
+    color: #333;
+    /* Text color */
+}
