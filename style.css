@@ -102,6 +102,17 @@ header.shrink .navlinks a {
     color: #18345e;
 }
 
+.profile-icon {
+    font-size: 20px;
+    color: #091930;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.02);
+}
+
 .menu-container {
     position: relative;
 
