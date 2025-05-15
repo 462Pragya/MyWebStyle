@@ -127,3 +127,27 @@ function handleSubmit(event) {
 
     return false; // Prevent the default action
 }
+function showLogin() {
+    document.getElementById('login-form').style.display = 'block';
+    document.getElementById('signup-form').style.display = 'none';
+    document.getElementById('loginBtn').classList.add('active');
+    document.getElementById('signupBtn').classList.remove('active');
+}
+
+function showSignup() {
+    document.getElementById('signup-form').style.display = 'block';
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('signupBtn').classList.add('active');
+    document.getElementById('loginBtn').classList.remove('active');
+}
+
+function goToAuth() {
+    document.getElementById('home-section').style.display = 'none';
+    document.getElementById('auth-section').style.display = 'block';
+    showLogin(); // default to login
+}
+
+function goBackHome() {
+    document.getElementById('auth-section').style.display = 'none';
+    document.getElementById('home-section').style.display = 'block';
+}
